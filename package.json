@@ -1,15 +1,15 @@
 {
-  "name": "version",
-  "version": "1.0.0",
-  "description": "A version management system.",
-  "author": "よね/Yone",
-  "license": "MIT",
-  "main": "./src/index.mts",
-  "scripts": {
-    "build": "tsc"
-  },
-  "dependencies": {
-    "typescript": "^5.8.2"
-  },
-  "type": "module"
+    "name": "version",
+    "version": "1.0.0",
+    "description": "A version management system.",
+    "author": "よね/Yone",
+    "license": "MIT",
+    "main": "./src/index.mts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "typescript": "^5.8.2"
+    },
+    "type": "module"
 }
