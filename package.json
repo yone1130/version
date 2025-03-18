@@ -11,5 +11,8 @@
     "dependencies": {
         "typescript": "^5.8.2"
     },
-    "type": "module"
+    "type": "module",
+    "exports": {
+        "import": "./src/version.mjs"
+    }
 }
