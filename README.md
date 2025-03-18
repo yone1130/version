@@ -6,6 +6,13 @@ A version management system.
 
 ## Usage
 
+### 1. Install as a package
+
+```bash
+npm install yone1130/version
+```
+
+### 2. Use
 A sample code:
 ```js
 const version = new Version(1, 0, 0, Version.levels.dev);
