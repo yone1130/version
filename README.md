@@ -15,7 +15,7 @@ npm install yone1130/version
 
 or direct importing from CDN (JavaScript):
 ```js
-import { Version } from "https://cdn.yoneyo.com/scripts/version/version-v1.0.0.mjs";
+import { Version } from "https://cdn.yoneyo.com/scripts/version/version-v1.0.0.js";
 ```
 
 ### 2. Use
