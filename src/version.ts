@@ -3,7 +3,6 @@
  * Version
  * 
  * Copyright (C) 2025 よね/Yone
- * 
  * Licensed under the MIT License.
  * 
  * https://github.com/yone1130/version
@@ -11,16 +10,11 @@
  */
 
 export class Version {
-    major: number;
-    minor: number;
-    patch: number;
-    level: string;
-
     constructor(
         major: number,
         minor: number,
         patch: number,
-        level: string
+        level: VersionLevel
     ) {
         this.major = major;
         this.minor = minor;
@@ -28,27 +22,30 @@ export class Version {
         this.level = level;
     }
 
+    major: number;
+    minor: number;
+    patch: number;
+    level: VersionLevel;
 
     get string(): String {
         switch (this.level) {
-            case Version.levels.stable:
+            case VersionLevel.stable:
                 return `${this.major}.${this.minor}.${this.patch}`;
 
-            case Version.levels.beta:
+            case VersionLevel.beta:
                 return `${this.major}.${this.minor}.${this.patch} (beta)`;
 
-            case Version.levels.dev:
+            case VersionLevel.dev:
                 return `${this.major}.${this.minor}.${this.patch} (dev)`;
 
             default:
                 return `${this.major}.${this.minor}.${this.patch}`;
         }
     }
+}
 
-
-    static levels = {
-        stable: "stable",
-        beta: "beta",
-        dev: "dev",
-    };
+export enum VersionLevel {
+    stable,
+    beta,
+    dev,
 }
