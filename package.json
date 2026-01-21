@@ -1,7 +1,7 @@
 {
     "name": "version",
     "version": "1.0.0",
-    "description": "A version management system.",
+    "description": "A library that version management system for TypeScript and JavaScript.",
     "author": "よね/Yone",
     "license": "MIT",
     "main": "./src/index.js",
