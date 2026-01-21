@@ -15,14 +15,14 @@ npm install yone1130/version
 
 or direct importing from CDN (JavaScript):
 ```js
-import { Version } from "https://cdn.yoneyo.com/scripts/version@1.0.0/version.js";
+import { Version, VersionLevels } from "https://cdn.yoneyo.com/scripts/version@1.0.0/version.js";
 ```
 
 ### 2. Use
 
 Example code:
 ```js
-const version = new Version(1, 0, 0, Version.levels.dev);
+const version = new Version(1, 0, 0, VersionLevels.dev);
 console.log(version.string);  // => "1.0.0 (dev)"
 ```
 
