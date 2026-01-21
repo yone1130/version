@@ -2,7 +2,7 @@
 
 ## Overview
 
-A version management system.
+A library that version management system for TypeScript and JavaScript.
 
 ## Usage
 
@@ -15,18 +15,18 @@ npm install yone1130/version
 
 or direct importing from CDN (JavaScript):
 ```js
-import { Version } from "https://cdn.yoneyo.com/scripts/version/version-v1.0.0.js";
+import { Version } from "https://cdn.yoneyo.com/scripts/version@1.0.0/version.js";
 ```
 
 ### 2. Use
 
-A sample code:
+Example code:
 ```js
 const version = new Version(1, 0, 0, Version.levels.dev);
 console.log(version.string);  // => "1.0.0 (dev)"
 ```
 
-## Build
+## Development
 
 ### 1. Install Packages
 
@@ -48,4 +48,4 @@ Emitted JavaScript files will be output to the `dist/` directory.
 
 Licensed under the [MIT License](./LICENSE)
 
-Copyright &copy; 2025 よね/Yone
+Copyright © 2025 よね/Yone
