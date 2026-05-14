@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Version** is a TypeScript / JavaScript library that version management system.
+**Version** is a TypeScript / JavaScript library for version management.
 
 ## Usage
 
