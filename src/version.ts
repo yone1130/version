@@ -27,25 +27,35 @@ export class Version {
     patch: number;
     level: VersionLevel;
 
-    get string(): String {
+    toString(): string {
+        const targetVersion = `${this.major}.${this.minor}.${this.patch}`;
+
         switch (this.level) {
             case VersionLevel.stable:
-                return `${this.major}.${this.minor}.${this.patch}`;
+                return targetVersion;
+
+            case VersionLevel.rc:
+                return `${targetVersion} (RC)`
 
             case VersionLevel.beta:
-                return `${this.major}.${this.minor}.${this.patch} (beta)`;
+                return `${targetVersion} (Beta)`;
+
+            case VersionLevel.alpha:
+                return `${targetVersion} (Alpha)`;
 
             case VersionLevel.dev:
-                return `${this.major}.${this.minor}.${this.patch} (dev)`;
+                return `${targetVersion} (Dev)`;
 
             default:
-                return `${this.major}.${this.minor}.${this.patch}`;
+                return targetVersion;
         }
     }
 }
 
 export enum VersionLevel {
     stable,
+    rc,
     beta,
+    alpha,
     dev,
 }

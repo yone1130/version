@@ -23,7 +23,7 @@ import { Version, VersionLevels } from "https://cdn.yoneyo.com/scripts/version@1
 Example code:
 ```js
 const version = new Version(1, 2, 0, VersionLevels.beta);
-console.log(version.string);  // => "1.2.0 (beta)"
+console.log(version.toString());  // => "1.2.0 (Beta)"
 ```
 
 ## Development
