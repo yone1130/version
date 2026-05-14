@@ -15,14 +15,14 @@ npm i yone1130/version
 
 or direct importing from CDN (JavaScript):
 ```js
-import { Version, VersionLevels } from "https://cdn.yoneyo.com/scripts/version@1.2.0/dist/version.js";
+import { Version, VersionLevel } from "https://cdn.yoneyo.com/scripts/version@1.2.0/dist/version.js";
 ```
 
 ### 2. Use
 
 Example code:
 ```js
-const version = new Version(1, 2, 0, VersionLevels.beta);
+const version = new Version(1, 2, 0, VersionLevel.beta);
 console.log(version.toString());  // => "1.2.0 (Beta)"
 ```
 
