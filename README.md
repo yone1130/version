@@ -2,7 +2,7 @@
 
 ## Overview
 
-A library that version management system for TypeScript and JavaScript.
+**Version** is a TypeScript / JavaScript library that version management system.
 
 ## Usage
 
@@ -10,20 +10,20 @@ A library that version management system for TypeScript and JavaScript.
 
 Install as a package (TypeScript):
 ```bash
-npm install yone1130/version
+npm i yone1130/version
 ```
 
 or direct importing from CDN (JavaScript):
 ```js
-import { Version, VersionLevels } from "https://cdn.yoneyo.com/scripts/version@1.0.0/version.js";
+import { Version, VersionLevels } from "https://cdn.yoneyo.com/scripts/version@1.2.0/dist/version.js";
 ```
 
 ### 2. Use
 
 Example code:
 ```js
-const version = new Version(1, 0, 0, VersionLevels.dev);
-console.log(version.string);  // => "1.0.0 (dev)"
+const version = new Version(1, 2, 0, VersionLevels.beta);
+console.log(version.string);  // => "1.2.0 (beta)"
 ```
 
 ## Development
@@ -31,7 +31,7 @@ console.log(version.string);  // => "1.0.0 (dev)"
 ### 1. Install Packages
 
 ```bash
-npm install
+npm i
 ```
 
 ### 2. Build
