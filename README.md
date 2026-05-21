@@ -28,9 +28,10 @@ const version = new Version({
     major: 1,
     minor: 3,
     patch: 0,
-    VersionLevel.beta,
+    level: VersionLevel.beta,
     revision: 1,
 });
+
 console.log(version.toString());  // => "1.3.0-beta.1"
 ```
 
