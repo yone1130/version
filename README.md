@@ -1,8 +1,10 @@
-# Version
+# Version.js
+
+[日本語で読む >](./README_JP.md)
 
 ## Overview
 
-**Version** is a TypeScript / JavaScript library for version management.
+**Version.js** is a TypeScript / JavaScript library for version management.
 
 ## Usage
 
@@ -10,20 +12,26 @@
 
 Install as a package (TypeScript):
 ```bash
-npm i yone1130/version
+npm i yone1130/version-js
 ```
 
 or direct importing from CDN (JavaScript):
 ```js
-import { Version, VersionLevel } from "https://cdn.yoneyo.com/scripts/version@1.2.0/dist/version.js";
+import { Version, VersionLevel } from "https://cdn.yoneyo.com/scripts/version-js@1.3.0/dist/version.js";
 ```
 
 ### 2. Use
 
 Example code:
 ```js
-const version = new Version(1, 2, 0, VersionLevel.beta);
-console.log(version.toString());  // => "1.2.0 (Beta)"
+const version = new Version({
+    major: 1,
+    minor: 3,
+    patch: 0,
+    VersionLevel.beta,
+    revision: 1,
+});
+console.log(version.toString());  // => "1.3.0-beta.1"
 ```
 
 ## Development
@@ -31,7 +39,7 @@ console.log(version.toString());  // => "1.2.0 (Beta)"
 ### 1. Install Packages
 
 ```bash
-npm i
+pnpm i
 ```
 
 ### 2. Build
@@ -39,7 +47,7 @@ npm i
 Compile to JavaScript.
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Emitted JavaScript files will be output to the `dist/` directory.
