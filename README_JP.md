@@ -17,7 +17,7 @@ npm i yone1130/version-js
 
 またはCDNから直接インポート (JavaScript):
 ```js
-import { Version, VersionLevel } from "https://cdn.yoneyo.com/scripts/version-js@1.3.0/dist/version.js";
+import { Version, VersionLevel } from "https://cdn.yoneyo.com/scripts/version-js@1.4.0/dist/version.js";
 ```
 
 ### 2. 使う
@@ -26,13 +26,13 @@ import { Version, VersionLevel } from "https://cdn.yoneyo.com/scripts/version-js
 ```js
 const version = new Version({
     major: 1,
-    minor: 3,
+    minor: 4,
     patch: 0,
     level: VersionLevel.beta,
     revision: 1,
 });
 
-console.log(version.toString());  // => "1.3.0-beta.1"
+console.log(version.toString());  // => "1.4.0-beta.1"
 ```
 
 ## 開発
